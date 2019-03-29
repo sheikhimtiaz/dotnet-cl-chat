@@ -13,14 +13,9 @@ namespace LiveChatServer
         static void Main(string[] args)
         {
 
-            //DBConnection.EstablishConnection();
-            Task t1 = DBConnection.EstablishConnection();
-
-            Task.WaitAll(t1);
-
-            Console.WriteLine("# Program Ends #");
+            ApplicationStarter.StartApplication();
         }
 
-        
+
     }
 }
